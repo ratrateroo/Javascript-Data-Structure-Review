@@ -1,0 +1,16 @@
+const person = { firstName: "Mark", age: 32, hobies: ["Coding", "MMORPG"] };
+
+//Objects are not iterable
+/* for (const el of person) {
+  console.log(el);
+} */
+
+//Object elements can't be accessed by index.
+/* console.log(person[0]); */
+
+console.log(person["firstName"]);
+console.log(person.firstName);
+
+person.lastName = "Tarectecan";
+
+console.log(person);
