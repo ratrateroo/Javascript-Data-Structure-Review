@@ -1,4 +1,11 @@
-const person = { firstName: "Mark", age: 32, hobies: ["Coding", "MMORPG"] };
+const person = {
+  firstName: "Mark",
+  age: 32,
+  hobies: ["Coding", "MMORPG"],
+  greet() {
+    console.log("Hi, I am" + this.firstName);
+  },
+};
 
 //Objects are not iterable
 /* for (const el of person) {
@@ -14,3 +21,4 @@ console.log(person.firstName);
 person.lastName = "Tarectecan";
 
 console.log(person);
+person.greet();
